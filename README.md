@@ -14,7 +14,7 @@ inplemented in [here](https://github.com/jfzhang95/pytorch-c3d).
 Thanks [猎户星空(Orion)](https://www.ainirobot.com/) for technical support.
 
 Thanks [创新工场(Sinovation Ventures)](http://www.sinovationventures.com/) for
-hosting DeeCamp.
+hosting this wonderful DeeCamp.
 
 ## License
 [MIT](https://github.com/jfzhang95/project-demo/blob/master/LICENSE)
