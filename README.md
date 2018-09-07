@@ -1,6 +1,6 @@
 # DeeCamp Project Demo
 
-<p align="center"><img src="assets/demo.gif" align="center" width=600 height=auto/></p>
+<p align="center"><img src="assets/demo.gif" align="center" width=800 height=auto/></p>
 
 ## Introduction
 This repo contains the online web game demo **You perform, I guess!**, which made by DeeEight
