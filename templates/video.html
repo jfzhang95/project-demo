@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>你做动作我来猜</title>
+
+        <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='video.css') }}">
+
+        <script src="{{ url_for('static', filename='plugins/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='video.js') }}"></script>
+
+        <style>
+            body{
+                background: url("{{ url_for('static', filename='video_bg.png') }}");
+                background-size: cover;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="result">我猜你在<span id="doing">{{ action }}</span>
+{#            <span style="height:10%;font-size: 20px;color:white">00:</span>#}
+            <span id="countTime" style="height:10%;font-size:22px;color: black">30</span>
+            <span style="height:10%;font-size: 20px;color:black">s</span>
+        </div>
+
+        <div id="video-box">
+            <img src="{{ url_for('video_feed') }}">
+        </div>
+    <p id="actionLabel" hidden>{{ label }}</p>
+
+
+{#    <audio autoplay="autoplay" id="MyAudio"  type="audio/mpeg" hidden>#}
+{#        <source src="/static/CrystalRing.mp3">#}
+{#        您的浏览器不支持该音频格式。#}
+{#    </audio>#}
+
+    <span id="audio"></span>
+    <script>
+        function countDown(){
+        var _time = $('#countTime');
+        if(_time.text() != 0){
+            _time.text(_time.text() - 1);
+            setTimeout("countDown()", 1000);
+            if(_time.text() == 0){
+                window.location.href = "/fail";
+            }
+        }
+    }
+
+    countDown();
+    </script>
+    </body>
+
+</html>
+

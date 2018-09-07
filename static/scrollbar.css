@@ -1,0 +1,177 @@
+.css-scrollbar {
+	width:302px;
+	height:300px;
+	overflow:hidden;
+	float:left;
+	margin:4px 0px;
+}
+.css-scrollbar.simple {
+	
+	overflow:hidden;
+	float:left;
+}
+/* ---------- basic theme: these are the most necessary styles --------------------------------- */
+
+.scrollbar-pane {
+    margin-right: 20px;
+}
+
+.scrollbar-handle-container {
+    background: #EEE;
+    width: 20px;
+}
+
+.scrollbar-handle {
+    width: 20px;
+    background: #999;
+}
+
+.scrollbar-handle:hover {
+    background: #666;
+}
+
+.scrollbar-handle.move {
+    background: #111;
+}
+
+.scrollbar-handle-up {
+    width: 20px;
+    height: 20px;
+    background: #DDD;
+}
+
+.scrollbar-handle-up:hover {
+    background: #666;
+}
+
+.scrollbar-handle-down {
+    width: 20px;
+    height: 20px;
+    background: #DDD;
+}
+
+.scrollbar-handle-down:hover {
+    background: #666;
+}
+
+
+
+/* ---------- simple theme --------------------------------------------------------------------- */
+
+.simple .scrollbar-pane {
+    margin-right: 16px;
+}
+
+.simple .scrollbar-handle-container {
+    background: #111111;
+    width: 15px;
+}
+
+.simple .scrollbar-handle-container.hover,
+.simple .scrollbar-handle-container.move {
+    background: #111;
+}
+
+.simple .scrollbar-handle, 
+.simple .scrollbar-handle-up, 
+.simple .scrollbar-handle-down {
+	background-image: url(../images/scrolarrows.png);
+	background-repeat: no-repeat;
+}
+
+
+/* handle */
+.simple .scrollbar-handle {
+    width: 13px;
+    border: 1px solid #292929;
+	background-color: #1a1a1a;
+	background-position: -16px 50%;
+}
+
+.simple .scrollbar-handle:hover {
+    border: 1px solid #292929;
+}
+
+.simple .scrollbar-handle.move {
+    border: 1px solid #292929;
+    background-color: #222222;
+}
+
+
+/* arrow up */
+.simple .scrollbar-handle-up {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #111111;
+    background-color: #111111;
+	background-position: -34px 2px;
+}
+
+.simple .scrollbar-handle-up.hover,
+.simple .scrollbar-handle-up:hover {
+    border: 1px solid #111111;
+}
+
+.simple .scrollbar-handle-up.move {
+    background-color: #111111;
+}
+
+
+/* arrow down */
+.simple .scrollbar-handle-down {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #111111;
+    background-color: #111111;
+	background-position: 2px 4px;
+}
+
+.simple .scrollbar-handle-down.hover,
+.simple .scrollbar-handle-down:hover {
+    border: 1px solid #111111;
+}
+
+.simple .scrollbar-handle-down.move {
+    background-color: #111111;
+}
+
+
+
+/* ---------- fff theme ----------------------------------------------------------------- */
+
+ul.fff {
+    padding: 0;
+}
+
+.fff .scrollbar-pane {
+    margin-right: 12px;
+}
+
+.fff .scrollbar-handle-container {
+    background: #EEE;
+    width: 12px;
+}
+
+.fff .scrollbar-handle {
+    width: 12px;
+	background-color: #CCC;
+}
+
+.fff .scrollbar-handle:hover {
+    background-color: #999;
+}
+
+.fff .scrollbar-handle.move {
+    background-color: #666;
+}
+
+.fff .scrollbar-handle-up {
+    width: 12px;
+    height: 18px;
+}
+
+.fff .scrollbar-handle-down {
+    width: 12px;
+    height: 18px;
+}
+

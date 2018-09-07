@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>挑战成功</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='demo.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='component.css') }}" />
+        <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='a.css') }}">
+
+{#        <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='result.css') }}#}
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+
+        <style>
+            #again{
+                color:#009999;
+            }
+            #exit{
+                color:#CC6666;
+            }
+            #again:hover, #exit:hover {
+                color:#F7B733;
+                {#background-color: #00b0e8;#}
+                cursor: pointer;
+            }
+        </style>
+
+    </head>
+
+
+	<body>
+		<div class="container demo-4">
+			<div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                        <center>
+                            <h1 class="main-title" style="font-size:80px;">
+                                <span class="thin" style="font-size:120px;color:#FF7F50">挑战成功</span><br>
+                                <span>
+                                    <div id="operations">
+                                        <a href="/ready"  id="again">再来一次</a>
+                                        <a href="/" id="exit">结束</a>
+                                    </div>
+                                </span>
+                            </h1>
+                        </center>
+
+
+                </div>
+            </div>
+            <audio autoplay="autoplay" loop="loop" src="/static/bgm_success.mp3" type="audio/mpeg" hidden>
+                您的浏览器不支持该音频格式。
+            </audio>
+        </div>
+
+        <script src="{{ url_for('static', filename='plugins/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='ready.js') }}"></script>
+        <script src="{{ url_for('static', filename='demo-4.js') }}"></script>
+
+	</body>
+
+</html>

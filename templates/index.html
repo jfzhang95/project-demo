@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>你做动作我来猜</title>
+        <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='normalize.css') }}">
+        <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='demo.css') }}">
+        <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='component.css') }}">
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+    </head>
+    <body>
+        <div class="container demo-3">
+
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title" >
+                        <span id="button">我要挑战</span>
+                    </h1>
+                </div>
+            </div>
+             <audio autoplay="autoplay" loop="loop" src="/static/bgm_index.mp3" type="audio/mpeg" hidden>
+                您的浏览器不支持该音频格式。
+            </audio>
+
+        </div><!-- /container -->
+
+        <script src="{{ url_for('static', filename='TweenLite.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='EasePack.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='rAF.js') }}"></script>
+        <script src="{{ url_for('static', filename='demo-3.js') }}"></script>
+    </body>
+</html>

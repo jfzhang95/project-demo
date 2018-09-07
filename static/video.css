@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #7f8c8d;
+}
+
+#result {
+    height: 200px;
+    line-height: 200px;
+    font-size: 40px;
+    text-align: center;
+
+    color: #0a0a0a;
+}
+
+#doing {
+    color: red;
+}
+
+#video-box {
+    height: 576px;
+    width: 768px;
+    background-color: white;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box
+}
+video {
+    width: 640px;
+    height: 360px;
+}
+
+#data-box {
+    margin-top: 20px;
+
+    text-align: center;
+    font-size: 25px;
+}
+
+#data {
+    color: tomato;
+}

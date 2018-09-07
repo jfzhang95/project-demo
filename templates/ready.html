@@ -1,0 +1,42 @@
+<html>
+	<head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>动作</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='normalize.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='demo.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='component.css') }}" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="container demo-4">
+			<div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                        <center>
+                            <h1 class="main-title" style="font-size:80px;">
+                                <span class="thin" style="font-size:120px;color:#FF7F50" id="actionType">跳绳</span><br>
+                                请准备，倒计时<br><span id="timeSkip">5</span>
+                            </h1>
+                        </center>
+
+
+                </div>
+            </div>
+        </div>
+
+{#         <audio autoplay="autoplay" src="/static/readygo.mp3" type="audio/mpeg" hidden>#}
+{#                您的浏览器不支持该音频格式。#}
+{#         </audio>#}
+        <span id="ready"></span>
+
+        <script src="{{ url_for('static', filename='plugins/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='ready.js') }}"></script>
+        <script src="{{ url_for('static', filename='demo-4.js') }}"></script>
+
+	</body>
+
+</html>
