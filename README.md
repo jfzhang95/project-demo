@@ -11,7 +11,7 @@ inplemented in [here](https://github.com/jfzhang95/pytorch-c3d).
 
 
 ## Acknowledgement
-Thanks [猎户星空(Orion)](https://www.ainirobot.com/) for technical support.
+Thanks [猎户星空(OrionStar)](https://www.ainirobot.com/) for technical support.
 
 Thanks [创新工场(Sinovation Ventures)](http://www.sinovationventures.com/) for
 hosting this wonderful DeeCamp.
